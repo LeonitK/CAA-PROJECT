@@ -1,0 +1,247 @@
+body p, a {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*html {
+	background-image: url(../img/pattern.jpeg) repeat-x;
+}
+*/
+.logo {
+	display: block;
+    margin: 25px auto;
+    width: 35%;
+}
+
+
+
+.title {
+	height: 37px;
+	background: rgba(11,79,162,1);
+	background: -moz-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11,79,162,1)), color-stop(100%, rgba(43,144,171,0.9)));
+	background: -webkit-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -o-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -ms-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: linear-gradient(to right, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4fa2', endColorstr='#2b90ab', GradientType=1 );
+	text-align: center;
+	font-size: 24px;
+	border-top-left-radius: 25px;
+}
+
+.title p {
+	margin: 0;
+	color: #fff;
+	padding-top: 3px;
+	/*font-weight: 300;*/
+}
+
+.subtitle {
+	height: auto;
+	background: rgba(11,79,162,1);
+	background: -moz-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11,79,162,1)), color-stop(100%, rgba(43,144,171,0.9)));
+	background: -webkit-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -o-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -ms-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: linear-gradient(to right, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4fa2', endColorstr='#2b90ab', GradientType=1 );
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 300;
+	padding: auto;
+	border-bottom-right-radius: 25px;
+}
+
+.subtitle p {
+	margin: 0;
+	padding: 3px 0 5px 0;
+}
+
+.note {
+	margin-top: 10px;
+	border: 1px solid #cacaca;
+	background-color: #f3f3f3;
+	padding: 5px 10px;
+	border-radius: 8px;
+}
+.note p {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+
+#form-container {
+	margin: 30px 0 0 0;
+	padding: 40px 0 100px 0;
+	background-image: url(img/pattern2.png);
+}
+
+#form-container .collapsible 
+
+.collapsible-body {
+	background-color: #fff;
+}
+
+.info-purpose p,
+.info-company p {
+	padding: 20px 30px!important;
+}
+
+.info-company .input-field {
+	margin: 0;
+}
+.info-company .row {
+	padding: 0;
+	margin: 0;
+}
+
+.info-company .info-company-field:hover,
+.info-company .info-company-field:focus {
+	background-color: #f5f5f5;
+}
+.info-company .info-company-field .input-field input {
+	padding-top: 7px;
+	margin-bottom: 5px!important;
+}
+
+label {
+	color: #333!important;
+}
+
+.info-company .info-company-field p {
+	padding: 23px 40px!important;
+}
+
+table tr {
+	border-bottom: 1px solid #eaeaea;
+}
+
+table td,
+table th {
+	padding: 5px;
+	width: 10%;
+}
+
+table th {
+	background-color: rgba(243, 243, 243, 0.72);
+	
+}
+
+table th.num-data,
+table td.num-data {
+	padding-left: 52px;
+	width: 1%!important;
+}
+
+table .table-row:hover {
+	background-color: #f5f5f5;
+}
+
+.specify,
+.specify-2 {
+	margin: 0 0 0 10px!important;
+	width: 60%!important;
+	height: 18px!important;
+}
+.specify-input {
+	display: none;
+}
+
+.input-field.textarea {
+	margin-top: 30px!important;
+}
+
+p.text-area-1 {
+	padding: 10px!important;
+}
+p.text-area-1 label {
+	margin-left: 15px;
+}
+#textarea1 {
+	height: 160px!important;
+}
+
+.activity-desc .row {
+	padding: 0;
+	margin: 0;
+}
+
+.activity-desc .activity-desc-field:hover,
+.activity-desc .activity-desc-field:hover,
+.docs .docs-desc-field:hover {
+	background-color: #f5f5f5;
+}
+
+.link {
+  padding-top: 81px!important;
+  padding-bottom: 81px!important;
+}
+
+.info-confirm p {
+	padding: 10px 30px!important; 
+}
+
+.info-confirm p.check {
+	padding: 0px 30px 20px 30px!important;
+}
+
+.laws p {
+	padding: 20px 30px!important; 
+}
+
+#vendi,
+#data_e_njoftimit {
+	height: 20px!important;
+}
+#nenshkrimi {
+	height: 20px!important;
+	width: 250px!important;
+}
+
+/* Page Footer */
+.page-footer {
+	padding-top: 5px!important;
+	margin: 0!important;
+	background: rgba(11,79,162,1);
+	background: -moz-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11,79,162,1)), color-stop(100%, rgba(43,144,171,0.9)));
+	background: -webkit-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -o-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -ms-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: linear-gradient(to right, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4fa2', endColorstr='#2b90ab', GradientType=1 );
+}
+
+.page-footer .row {
+	margin: 0!important;
+}
+
+.btn, .btn-large {
+	background: rgba(11,79,162,1);
+	background: -moz-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11,79,162,1)), color-stop(100%, rgba(43,144,171,0.9)));
+	background: -webkit-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -o-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: -ms-linear-gradient(left, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	background: linear-gradient(to right, rgba(11,79,162,1) 0%, rgba(43,144,171,0.9) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b4fa2', endColorstr='#2b90ab', GradientType=1 );
+}
+
+div.error { 
+	display: block; 
+	float: left;
+	color: #e04d4d;
+	margin-bottom: 5px;
+	font-size: 13px;
+	/*font-weight: 300;*/
+}
+
+.file-sect {
+	padding-top: 7px!important;
+}
+
+.docs .docs-desc-field {
+	margin-bottom: 0px!important;
+}

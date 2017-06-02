@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techstitiution</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <script type="javascript/text" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+    </head>
+    <body>
+    <!-- Header -->
+    {% block header %}
+        <header>
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        </header>
+    {%  endblock %}
+    {% block form %}
+        <!-- The form rendered from index.html -->
+    {% endblock %}
+    {% block content %}
+        <!-- Results page rendered from results.html -->
+    {% endblock %}
+    <!-- Footer -->
+    {% block footer %}
+        <footer>
+        </footer>
+    {% endblock %}
+    </body>
+</html>
