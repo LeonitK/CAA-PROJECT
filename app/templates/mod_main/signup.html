@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techstitution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="stylesheet" href="index">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="webi text">
+        <div class="col-md-2 majti">
+         <div class="row">
+          <div class="col-md-12 logo">
+              <p4>CAA agency</p4>
+          </div>
+           
+        <div class="col-md-10 col-md-offset-1 shkrimi text-center">
+          <div class="backi1">
+              
+          </div>
+          <p>HELLO  EMPLOYE</p>
+         </div>   
+         
+          <div class="col-md-12 col-sm-12 col-xs-12 butonat text-center">
+            <div class="col-md-12 butoni">
+             <a href="/"id="" class="btn btn-lg"><p2>Log in</p2></a>
+            </div>  
+              <div class="col-md-12 butoni2">
+               <a href="/signUP"id="" class="btn btn-lg"><p2>Sign up</p2></a>
+               </div>
+          </div>
+        </div>
+      </div> 
+      
+    <div class="djathti">
+       <div class="col-md-10 hello">
+        <div class="row">
+         <div class="col-md-6 col-md-offset- right  text-left">
+              <p>LOG IN FORM</p>
+          </div>
+           <div class="col-md-6 col-md-offset right  text-right">
+              <p>SIGN UP FORM</p>
+          </div>
+          </div>
+           
+        <div class="container">
+          <div class="col-md-6 col-md-offset-2 signup text-left" style="border: px solid  brown; height:80vh;">
+        
+       
+                
+        <div class=""> 
+           <div class="col-md-12 col-md-offset-1 text-left">
+            <div class="col-md-10 col-md-offset forma text-left">
+                 <legend><a href=""><i  class="glyphicon glyphicon-globe" style="font-size:45px;"></i></a> <p4>Sign up!</p4></legend>
+                 
+                 <form action="{{url_for('main.signUP')}}" method="POST" class="form" role="form" style="">
+            <div class="row">
+                <div class="col-xs-6 col-md-6 he" style="">
+                    <input style="height:4.5vh;" class="form-control" name="first_name" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                 <div class="col-xs-6 col-md-6 he">
+                    <input style="height:4.5vh"; class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+                
+            </div>
+            
+            <div class="col-md-12 he">
+             <div class="row">
+              <input  style="height:4.5vh" class="form-control" name="youremail" placeholder="Your Email" type="email" />
+            <input style="height:4.5vh" class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input style="height:4.5vh" class="form-control" name="password" placeholder="New Password" type="password" />
+            <input type="text" name="phoneNR" class="form-control" placeholder="Phone Number" style="height:4.5vh;">
+            <label for="">
+                Birth Date</label>
+                </div>
+                </div>
+                
+                
+                 <div class="row">
+                 <div class="col-md-12">
+                     <input type="date" class="form-control">
+                 </div>
+               
+            </div>
+            <br>
+            <input class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</input>
+        </form>
+            
+        </div>
+        </div>
+     </div>     
+   </div>      
+ </div>     
+        
+       
+      </div>
+     </div>
+   </div>
+ 
+     
+    
+   <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script type="text/javascript" src="main.js"></script>      
+</body>
+</html>

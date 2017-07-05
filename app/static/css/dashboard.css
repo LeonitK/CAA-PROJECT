@@ -1,0 +1,138 @@
+@import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: ;
+}
+.majti {
+    height:100vh;
+    border: 0px solid black;
+   background: #2C2E2B;;
+     
+}
+.backi1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url('images/ks.png');
+    height:20vh;
+    margin-top:-170px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    border: px solid white;
+}
+.majti .logo {
+    height:7.5vh;
+    background: #1D1F1C;
+    padding-top:12px;
+} 
+p {
+    color:lightgray;
+    font-size:20px;
+    font-family: sans-serif;
+}
+.menu  {
+    height:80vh;
+    border:px solid white;
+    padding-top:50px;
+   
+}
+.menu .height {
+    height:9.9vh;
+    padding: 23px;
+    margin-bottom: 2px;
+    border-bottom: 0px solid red!important;
+}
+.menu p4 {
+    font-size:25px;
+    color:white;
+    border-bottom: 0px solid red!important;
+}
+.menu p5 {
+    font-size:13px;
+    color:gray;
+    font-weight: 500;
+    font-family:monospace;
+    border-bottom: 0px solid red!important;
+}
+.height p2 {
+    margin-left: 3px;
+    color: antiquewhite;
+    margin-top:5px;
+    font-weight: 400!important;  
+    border-bottom: 0px solid red!important;
+}
+.height a p2 {
+    text-decoration: none;
+    font-weight: 400!important
+}
+.height:hover {
+   border-left: 5px solid #5584ff;;
+   color:aquamarine!important;
+     background-color: rgba(0, 0, 10, 0.2);
+}
+
+.iconat {
+    margin-top:4px;
+}
+.djathi {
+    height:7.5vh;
+    background:whitesmoke;
+}
+.foto {
+    height:73vh;
+    border:px solid gray;
+   
+}
+.shkrimi {
+    color:gray;
+    font-family:fantasy;
+}
+a .orange span {
+    color:darkslategray;
+}
+
+.orange {
+    border: 1px solid lightgray;
+}
+.orange span {
+    
+}
+a .orange:hover {
+    color:darkcyan;
+    background: whitesmoke;
+}
+.last {
+   
+    margin-bottom: 10px;
+}
+.last p5 {
+     font-weight: 600;
+    font-size: 20px;
+}
+@media only screen and (max-width: 991) {
+    body {
+        overflow: auto;
+    }
+}
+@media only screen and (max-width: 991px) {
+   
+  .hi3  p {
+        margin-top:-32px!important;
+         color:lightgray;
+    }
+}
+@media only screen and (max-width: 991px) {
+    body {
+        overflow: auto;
+        height:auto;
+    }
+  p {
+        margin-top:-32px!important;
+         color:lightgray;
+    }
+    .scrolli {
+        overflow-y: hidden!important;
+        height:auto!important;
+    }
+}

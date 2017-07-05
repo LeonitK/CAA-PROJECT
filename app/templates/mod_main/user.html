@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techstitution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/raport.css') }}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body style="@media only screen and (max-width: 991px) {
+    body {
+        overflow: auto;
+    }
+    .scrolli {
+    overflow:hidden;
+    }
+};">
+    
+    <div class="webi text" style=>
+        <div class="col-md-2 majti">
+         <div class="row">
+         
+          <div class="col-md-12 logo text-left">
+            <div class="col-md-2 text-right">  
+              <span style="font-size:20px; color:lightgray; margin-top:3px;" class="glyphicon glyphicon-asterisk"></span>
+              </div>
+              
+              <div class="col-md-5 text-left"><p>CAA</p></div>
+            
+         </div>
+          
+            <div class="col-md-12 menu">
+                <div class="row">
+                 
+                 <div class="col-md-12 text-center" style="margin-bottom:65px;"><p4> Menu</p4><br>
+                 <p5>Just for Employers</p5>
+                 </div>
+                 
+                 <a href="{{ url_for('main.add_audit') }}" class="">
+                    <div class="col-md-12 height text-left">
+                         <div class="col-md-3 col-xs-5"><span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-plus-sign"></span></div> 
+                         <div class="col-md-9 col-xs-5 text-left iconat">
+                         <p2> New Audit</p2>
+                         </div>
+                    </div>
+                  </a>  
+                   
+                     
+                      
+                 <a href="{{ url_for('main.view_reports') }}">
+                    <div class="col-md-12 height text-left">                    
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-list-alt"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Raports</p2></div>
+                      
+                     </div>
+                 </a>
+                     
+                     <a href="/user">
+                      <div class="col-md-12 height text-left">
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-user"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Members</p2></div>
+                         
+                     </div>
+                     </a>
+                     
+                     <a href="/">
+                      <div class="col-md-12 height text-left" style="margin-bottom:96px";>
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-off"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Log out</p2></div>
+                       
+                     </div>
+                    </a>
+                      
+                     
+                     <div class="col-md-11 text-center">
+                          <a href="/contactAudit" id="butoni" type="submit"class="btn btn-md btn-info">
+                         Contact Us</a>
+                     </div>
+                     
+                  </div>     
+                </div> <!-- MENU -->
+        
+              
+        
+          
+            </div> <!-- ROW -->
+        </div> <!-- MAJTI -->
+        
+        <div class="col-md-10 shkr" style="padding-top:20px;">
+            <div class="row">
+               <div class="col-md-2 col-xs-12 text-right rap" style="padding-top:0px;" >
+                    <a href="/dashboard"><span class="glyphicon glyphicon-home" style="font-size:20px; color:darkcyan"></span> Home</a> 
+                </div>
+                <div class="col-md-10 text-right rap" style="margin-bottom:10px;">
+                    <p3>USER </p3>
+                </div>
+                
+            
+                <div class=" col-md-12 scrolli" style="height:91.5vh;border: 0px solid red; overflow-x:hidden;;">
+                   
+                   
+                   <div class="container">
+	<div class="row">
+		
+    <div class="col-md-10">   
+        <div class="" style="">
+        <h2 style="margin-bottom:30px;">Registred Accounts (ALL USERS)</h2>
+        <div class="table-responsive">
+
+                
+    <table id="myTable" class="table table-bordred table-striped ">
+                   
+                   <thead style="text-align:center;">
+                <tr class="header">   
+                 <th><input type="checkbox" id="checkall" /></th>
+                   <th>First Name</th>
+                    <th>Last Name</th>
+                     <th>Email</th>
+                     <th>Contact</th>
+                      <th>Password</th>
+                      <th style="">Status</th>
+                       <th style="border-left:1px solid lightgray;">Delete</th>
+                       </tr>
+                   </thead>
+    <tbody>
+    
+      {% for user in users %}
+        <tr>
+        <td></td>
+        <td>{{ user.first_name }}</td>
+        <td>{{ user.lastname }}</td>
+       <td>{{ user.youremail }}</td>
+       <td>{{ user.reenteremail }}</td>
+       <td>{{ user.password }}</td>
+        <td>{{ user.phoneNR }}</td>
+        
+        
+        <td style="border-left:1px solid lightgray;"><a type="button" class="btn  btn-md btn-default" href="{{url_for('main.delete_user', user_id=user._id)}}">Delete</a></td>
+        </tr>
+      {% endfor %}
+    
+    
+    </tr>
+    
+    </tbody>
+        
+</table>
+
+
+                
+            </div>
+            
+        </div>
+	</div>
+</div>
+
+
+
+    
+    
+    
+                   
+                   
+                    
+      </div>   
+            
+        <div class="col-md-12">
+        
+            
+                 <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                         <img src="../static/images/Partin%20Imeri.jpg" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                           Partin Imeri</h4>
+                        <small><cite title="Prishtine/KS">Ferizaj <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small>
+                        <p>
+                            <i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br />
+                            <i class="glyphicon glyphicon-globe"></i><a href="#">www.PartinImeri.net</a>
+                            <br />
+                            <i class="glyphicon glyphicon-gift"></i>June 02, 1984</p>
+                        <!-- Split button -->
+                        <p>Status: Admnistrator</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">
+                                Engeenier</button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>
+           
+        <div class="col-md-12">
+            
+                 <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                         <img src="../static/images/blerta3.jpg"
+                         class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                            Blerta Thaqi</h4>
+                        <small><cite title="Prishtine/KS">Prishtine <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small>
+                        <p>
+                            <i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br />
+                            <i class="glyphicon glyphicon-globe"></i><a href="#">www.BlertaThaqi.net</a>
+                            <br />
+                            <i class="glyphicon glyphicon-gift"></i>June 02, 1991</p>
+                        <!-- Split button -->
+                         <p>Status: Admnistrator</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">
+                                Project Cordinator</button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>        
+                
+                
+            <div class="col-md-12">
+            
+                 <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                         <img src="../static/images/arianit.jpg"
+                         class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                            Arianit Hetemi</h4>
+                        <small><cite title="Prishtine/KS">Gjilan <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small>
+                        <p>
+                            <i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br />
+                            <i class="glyphicon glyphicon-globe"></i><a href="#">www.ArianitH.net</a>
+                            <br />
+                            <i class="glyphicon glyphicon-gift"></i>December 02, 1997</p>
+                        <!-- Split button -->
+                         <p>Status: Editor</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">
+                               Asisstant</button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>    
+                       
+        <div class="col-md-12">
+            
+                 <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                         <img src="../static/images/burim.jpg"
+                         class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                            Burim Fusha</h4>
+                        <small><cite title="Prishtine/KS">Prishtine <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small>
+                        <p>
+                            <i class="glyphicon glyphicon-envelope"></i>email@example.com
+                            <br />
+                            <i class="glyphicon glyphicon-globe"></i><a href="#">www.BurimF.net</a>
+                            <br />
+                            <i class="glyphicon glyphicon-gift"></i>December 12, 2000</p>
+                        <!-- Split button -->
+                         <p>Status: User</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">
+                               Student</button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </div>     
+                        
+              
+
+      
+                
+                </div> 
+            </div>
+            
+       
+            
+            
+            
+            
+     
+        
+       
+      
+     
+    
+   
+  </div> <!-- WEBI TEXT -->
+    <script>
+function deleteRow(r) {
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("myTable").deleteRow(i);
+}
+    </script>
+         
+         <script type="text/javascript">
+      window.onload=function(){
+      $('.selectpicker').selectpicker();
+      $('.rm-mustard').click(function() {
+        $('.remove-example').find('[value=Mustard]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-ketchup').click(function() {
+        $('.remove-example').find('[value=Ketchup]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-relish').click(function() {
+        $('.remove-example').find('[value=Relish]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.ex-disable').click(function() {
+          $('.disable-example').prop('disabled',true);
+          $('.disable-example').selectpicker('refresh');
+      });
+      $('.ex-enable').click(function() {
+          $('.disable-example').prop('disabled',false);
+          $('.disable-example').selectpicker('refresh');
+      });
+
+      // scrollYou
+      $('.scrollMe .dropdown-menu').scrollyou();
+
+      prettyPrint();
+      };
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.js" />
+          
+    
+
+    
+        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script type="text/javascript" src="main.js"></script>      <script type="text/javascript" src="main.js"></script>    
+</body>
+</html>

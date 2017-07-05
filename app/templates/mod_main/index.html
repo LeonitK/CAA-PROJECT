@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techstitution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body style="overflow:;">
+    
+    <div class="webi text">
+        <div class="col-md-2 majti">
+         <div class="row">
+          <div class="col-md-12 logo">
+              <p4>CAA agency</p4>
+          </div>
+          
+          <div class="col-md-10 col-md-offset-1 shkrimi text-center">
+          <div class="backi1">
+              
+          </div>
+          <p>HELLO  EMPLOYE</p>
+         </div>   
+          
+          <div class="col-md-12 col-sm-12 col-xs-12 butonat text-center">
+              <div class="col-md-12 butoni">
+             <a href="/"id="" class="btn btn-lg"><p2>Log in</p2></a>
+            </div>  
+              <div class="col-md-12 butoni2">
+               <a href="/signUP"id="" class="btn btn-lg"><p2>Sign up</p2></a>
+               </div>
+          </div>
+        </div>
+      </div> 
+      
+    <div class="djathti">
+       <div class="col-md-10">
+         <div class="row">
+         <div class="col-md-12">
+          <div class="row">
+          <div class="col-md-6 col-md-offset- right  text-left">
+              <p>LOG IN FORM</p>
+          </div>
+           <div class="col-md-6 col-md-offset right  text-right">
+              <a href="/second-audit">Raport</a>
+              </div>
+          </div>
+          </div>
+         </div>    
+         
+ <div class="col-md-12 col-md-offset-0">    
+      <div class="container">
+        <div class="col-md-6 col-md-offset-2 hello"> 
+          <div class="col-md-11 fotoja text-center">
+              <img src="{{ url_for('static', filename='images/logo.png') }}" alt="google.com" height="160px; width:200px;">
+          </div>
+          
+          
+          <div class="col-md-11 shkr text-center">
+             <br> <br><br>
+              <p3>LOG IN TO SEE MORE...</p3>
+          </div>
+          <div class="col-md-10 col-md-offset-1 inputat5 text-left">
+              	<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Login">
+							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+						</div>
+					</div> 
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password">
+							<label style="font-size" for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+						</div>
+					</div> 
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div> 
+				</form>
+         
+         	<div class="modal-footer">
+                <div class="row">
+				<a href="/dashboard" style="height:6vh;font-size:18px;"class="form-control btn btn-primary">Log in</a>
+			</div>
+         </div>  
+              
+   
+          </div>
+          </div>
+       </div>
+   
+    
+     
+    </div>
+    
+       <div class="col-md-2 col-md-offset-4 text-left" style="margin-top:-20px; height:6vh;"><p3 style="font-size:16px; color:gray;">Login as :</p3></div>
+       <div class="col-md-1 col-md-offset- text-center" style="height:6vh; border:px solid red; margin-top:-30px;">
+         
+       <select class="selectpicker" data-style="btn-defalt" style="display:inline; ;">
+       <option value="">User</option>
+      <option>Editor</option>
+           <option>Administrator</option>
+      </select>
+     
+      </div>
+       
+      </div>   
+      
+      
+      
+    </div>
+  </div>  
+   
+   
+   
+   <!-- log in i mahereshem 
+   
+    <div class="container">
+        <div class="col-md-6 col-md-offset-2 hello"> 
+          <div class="col-md-11 fotoja text-center">
+              <img src="images/logo.png" alt="google.com" height="160px; width:200px;">
+          </div>
+          
+          
+          <div class="col-md-11 shkr text-center">
+             <br> <br><br>
+              <p3>LOG IN TO SEE MORE...</p3>
+          </div>
+          <div class="col-md-10 col-md-offset-1 inputat5 text-left">
+              	<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="uLogin" placeholder="Login">
+							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+						</div>
+					</div> 
+
+					<div class="form-group">
+						<div class="input-group">
+							<input type="password" class="form-control" id="uPassword" placeholder="Password">
+							<label style="font-size" for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+						</div>
+					</div> 
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div> 
+				</form>
+         
+         	<div class="modal-footer">
+                <div class="row">
+				<a href="dashboard.html" style="height:6vh;font-size:18px;"class="form-control btn btn-primary">Log in</a>
+			</div>
+         </div>  
+          </div>
+          </div>
+       </div>
+   -->
+   
+   
+    <!-- pjesa e dyt e webit pas log init 
+    
+    
+     <div class="col-md-2 majti">
+          <div class="row">
+           <div class="logo text-left">
+               <div class="col-md-3">
+               <img src="images/caa.png" alt="" height="50px; width:50px;">
+               </div>
+               <div class="col-md-9 text-center"><p>Civil Aviation Authority</p>
+               </div>
+               
+               <div class="col-md-12 poshti text-center">
+                   <p1>Leonit Kuleta</p1>
+                    <p> Google inc.</p>
+               </div>
+               <div class="col-md-12 iconat">
+                   <div class="col-md-2 "><span class="glyphicon glyphicon-play-circle" style="font-size:25px; color:gray;"></span>
+                   </div>
+                   <div class="col-md-9 text-left">
+                       <p3>More video</p3>
+                   </div>
+                   
+                   
+               </div>
+               
+                  
+            
+           </div>
+          </div>  
+        </div>
+        
+        --> 
+     <script>
+function deleteRow(r) {
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("myTable").deleteRow(i);
+}
+    </script>
+    
+     <script type="text/javascript">
+      window.onload=function(){
+      $('.selectpicker').selectpicker();
+      $('.rm-mustard').click(function() {
+        $('.remove-example').find('[value=Mustard]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-ketchup').click(function() {
+        $('.remove-example').find('[value=Ketchup]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-relish').click(function() {
+        $('.remove-example').find('[value=Relish]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.ex-disable').click(function() {
+          $('.disable-example').prop('disabled',true);
+          $('.disable-example').selectpicker('refresh');
+      });
+      $('.ex-enable').click(function() {
+          $('.disable-example').prop('disabled',false);
+          $('.disable-example').selectpicker('refresh');
+      });
+
+      // scrollYou
+      $('.scrollMe .dropdown-menu').scrollyou();
+
+      prettyPrint();
+      };
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.js" />
+    
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>      
+</body>
+</html>

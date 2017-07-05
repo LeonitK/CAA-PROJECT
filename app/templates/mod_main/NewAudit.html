@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techstitution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newAudit.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script>
+$(document).ready(function(){
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
+
+    
+});
+    
+</script>
+</head>
+<body style="@media only screen and (max-width: 991) {
+    body {
+        overflow: auto;
+    }
+};">
+    
+    <div class="webi text">
+        <div class="col-md-2 majti">
+         <div class="row">
+         
+          <div class="col-md-12 logo text-left">
+            <div class="col-md-2 text-right">  
+              <span style="font-size:20px; color:lightgray; margin-top:3px;" class="glyphicon glyphicon-asterisk"></span>
+              </div>
+              
+              <div class="col-md-5 text-left"><p>CAA</p></div>
+            
+         </div>
+          
+            <div class="col-md-12 menu">
+                <div class="row">
+                 
+                 <div class="col-md-12 text-center" style="margin-bottom:65px;"><p4> Menu</p4><br>
+                 <p5>Just for Employers</p5>
+                 </div>
+                 
+                <a href="{{ url_for('main.add_audit') }}" class="">
+                    <div class="col-md-12 height text-left">
+                         <div class="col-md-3 col-xs-5"><span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-plus-sign"></span></div> 
+                         <div class="col-md-9 col-xs-5 text-left iconat">
+                         <p2> New Audit</p2>
+                         </div>
+                    </div>
+                  </a>  
+                   
+                     
+                      
+                <a href="{{ url_for('main.view_reports') }}">
+                    <div class="col-md-12 height text-left">                    
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-list-alt"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Raports</p2></div>
+                      
+                     </div>
+                 </a>
+                     
+                     
+                     <a href="/user">
+                      <div class="col-md-12 height text-left">
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-user"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Members</p2></div>
+                         
+                     </div>
+                     </a>
+                     
+                      <a href="/">
+                      <div class="col-md-12 height text-left" style="margin-bottom:96px";>
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-off"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Log out</p2></div>
+                       
+                     </div>
+                    </a>
+                      
+                     
+                     <div class="col-md-11 text-center">
+                         <a href="/contactAudit" id="butoni" type="submit"class="btn btn-md btn-info">
+                         Contact Us</a>
+                     </div>
+                     
+                  </div>     
+                </div> <!-- MENU -->
+        
+              
+        
+          
+            </div> <!-- ROW -->
+        </div> <!-- MAJTI -->
+        
+        <div class="col-md-10 djathti  text-center">
+          <div class="col-md-2 col-xs-12 text-right rap" style="padding-top:10px;" >
+                    <a href="/dashboard"><span class="glyphicon glyphicon-home" style="font-size:20px; color:darkcyan"></span>  Home</a> 
+                </div>
+           <div class="col-md-8 col-md-offset-2 col-xs-12 text-right shkr1" style="margin-top:10px;;">
+           <p style="font-size:18px; color:darkcyan;"> ADD AN AUDIT..</p>
+           </div>
+        
+    <div class="col-md-11 col-md-offset-1 scrolli" style="padding-top:95px; border:px solid red; overflow:scroll; height:91vh; overflow-x:hidden;">
+         
+        
+
+         <div class="col-md-10">
+          <div class="row">
+           <div class="col-md-12 text-left hello" style="">
+             <p2>ADD NEW AUDIT HERE </p2>
+         </div>
+    <div class="form-area" id="forma">  
+        <form action="{{ url_for('main.add_audit') }}" method="post">
+        <br style="clear:both">
+                   <div style="margin-bottom:15px;" class="col-md-5 text-left hapsira"><p1>TITLE:</p1></div>
+                    <div style="margin-bottom:15px;" class="col-md-7 col-md-offset-0 col-md-offset- form-group  hapsira">
+                        <input style="margin-bottom: " type="text" class="form-control" id="name" name="name" placeholder="Title" required>
+                    </div>
+                    <div style="margin-bottom:15px;" class="col-md-5 text-left hapsira"><p1>REFERENCE NUM:</p1></div>
+                     <div style="margin-bottom:15px;" class="col-md-7 col-md-offset-0 col-md-offset- form-group hapsira">
+                        <input style="margin-bottom: " type="text" class="form-control" id="name" name="ref_num" placeholder="Reference Number" required>
+                    </div>
+                    <div  style="margin-bottom:15px;" class="col-md-5 text-left hapsira"><p1>DATE:</p1></div>
+                     <div style="margin-bottom:15px;" class="col-md-7 col-md-offset-0 col-md-offset- form-group hapsira">
+                        <input type="date" class="form-control" id="name" name="date" placeholder="Date" required>
+                    </div>
+                       <div style="margin-bottom:15px;" class="col-md-5 text-left hapsira"><p1> AUDIT TYPE::</p1></div>
+                     <div style="margin-bottom:15px;" class="col-md-7 col-md-offset-0 col-md-offset- form-group hapsira">
+                    <input class="form-control" list="browsers" name="audit_type" style="" placeholder="Audit Type:" /></label>
+                        <datalist id="browsers" style="margin-bottom:0px; ">
+                          <option value="Audit">
+                          <option value="Inspection">
+                          <option value="Ad-hoc inspection">
+                          <option value="Unannounced">
+                        
+                        <option value="Other:"> 
+                        </datalist>
+                        </div>
+                    </div>
+                   <div style="margin-bottom: 0px;" class="col-md-5 text-left"><p1>DOCUMENT NAME:</p1></div>
+                     <div style="margin-bottom: 0px;" class="col-md-7 col-md-offset-0 col-md-offset- form-group">
+                        <input type="text" class="form-control" id="name" name="doc_name" placeholder="Document Name:" required>
+
+
+
+
+               </div>
+
+
+
+
+                    </div>
+
+
+
+<!--
+<div class="row">
+    <div class="col-md-5 text-left">
+                <button style="margin-top: -5px;" type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#navi">Add an Field</button>
+            </div>
+            
+            
+        <div class="col-md-7 col-md-offset-0 collapse " id="navi">
+           
+        
+            <div style="margin-top: -5px; class="">
+              <input  type="hidden" name="count" value="1" class="form-control" class="form-control"/>
+                  <div class="control-group" id="fields">
+                    
+                      <div class="controls" id="profs"> 
+                          <form class="input-append" id="form">
+                              <div id="field" style="display:inline;"><input autocomplete="off" class="form-control" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
+                          </form>
+                      <br>
+                      <small>Press + to add another form field :)</small>
+                      </div>
+                  </div>
+            </div>
+         </div>
+-->
+    </div>
+
+        <br>
+         <div class="col-md-12">
+         <br><br><br><br>
+               <input type="submit" id="submit" name="submit" class="btn-lg btn-primary pull-center" />
+         </div>           
+        
+        </form>
+    </div>
+ </div>
+</div>
+</div>
+   
+      </div>
+    </div> <!-- WEBI TEXT -->
+    
+    
+    
+    
+        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>           
+</body>
+</html>

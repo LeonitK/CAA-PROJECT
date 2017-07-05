@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techstitution</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/raport.css') }}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body style="@media only screen and (max-width: 991) {
+    body {
+        overflow: auto;
+    }
+}">
+    
+    <div class="webi text">
+        <div class="col-md-2 majti">
+         <div class="row">
+         
+          <div class="col-md-12 logo text-left">
+            <div class="col-md-2 text-right">  
+              <span style="font-size:20px; color:lightgray; margin-top:3px;" class="glyphicon glyphicon-asterisk"></span>
+              </div>
+              
+              <div class="col-md-5 text-left"><p>CAA</p></div>
+            
+         </div>
+          
+            <div class="col-md-12 menu">
+                <div class="row">
+                 
+                 <div class="col-md-12 text-center" style="margin-bottom:65px;"><p4> Menu</p4><br>
+                 <p5>Just for Employers</p5>
+                 </div>
+                 
+                <a href="#" class="">
+                    <div class="col-md-12 height text-left">
+                         <div class="col-md-3 col-xs-5"><span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-plus-sign"></span></div> 
+                         <div class="col-md-9 col-xs-5 text-left iconat">
+                         <p2> New Audit</p2>
+                         </div>
+                    </div>
+                  </a>  
+                   
+                     
+                      
+                <a href="#">
+                    <div class="col-md-12 height text-left">                    
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-list-alt"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Raports</p2></div>
+                      
+                     </div>
+                 </a>
+                     
+                     <a href="#">
+                      <div class="col-md-12 height text-left">
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-user"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Members</p2></div>
+                         
+                     </div>
+                     </a>
+                     
+                      <a href="/">
+                      <div class="col-md-12 height text-left" style="margin-bottom:96px";>
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-off"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Log out</p2></div>
+                       
+                     </div>
+                    </a>
+                      
+                     
+                     <div class="col-md-11 text-center">
+                          <a href="" id="butoni" type="submit"class="btn btn-md btn-info">
+                         Contact Us</a>
+                     </div>
+                     
+                  </div>     
+                </div> <!-- MENU -->
+        
+              
+        
+          
+            </div> <!-- ROW -->
+        </div> <!-- MAJTI -->
+        
+        <div class="col-md-10 shkr" style="margin-bottom:5px;">
+            <div class="row">
+                <div class="col-md-11 text-right rap">
+                    <p3>RAPORT </p3>
+                </div>
+            </div>
+        </div>
+        
+ 
+<div class="rreshqitsja" style="height:92.5vh; border:1px solid white; overflow:scroll; padding-top:40px;">
+    <div class="row">
+     <div class="col-md-10 col-md-offset-1 tex-center">  
+           <div class="col-md-9">
+              
+           </div>
+
+        
+
+
+        <table id="myTable" style="margin-bottom:105px;">
+          <tr class="header">
+            <th style="width:20%;">TITLE</th>
+            <th style="width:20%;">Ref. NUM</th>
+             <th style="width:20%;">DATE</th>
+              <th style="width:20%;">AUDIT TYPE</th>
+              <th style="width:20%;">DOCUMENT NAME</th>
+
+             
+          </tr>
+ {% for report in reports %}
+
+            <tr>
+              <td>{{ report.title }}</td>
+              <td>{{ report.ref_num }}</td>
+              <td>{{ report.date }}</td>
+              <td>{{ report.audit_type }}</td>
+              <td>{{ report.doc_name }}</td>
+            </tr>
+
+          {% endfor %}
+         
+        </table>
+     </div>    
+     </div> 
+ </div>   <!-- reshqitsja 
+    
+    
+    
+    
+    
+    
+<!--- -------------------------------------------------- -->
+   
+   
+ 
+
+    
+    
+</div> <!-- WEBI TEXT -->
+    
+    
+
+    
+        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script type="text/javascript" src="main.js"></script>      <script type="text/javascript" src="main.js"></script>    
+</body>
+</html>

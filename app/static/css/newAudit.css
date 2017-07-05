@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow:;
+}
+.majti {
+    height:100vh;
+    border: 0px solid black;
+   background: #2C2E2B;
+}
+.backi1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url('images/ks.png');
+    height:20vh;
+    margin-top:-170px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    border: px solid white;
+}
+.majti .logo {
+    height:7.5vh;
+    background: #1D1F1C;
+    padding-top:15px;
+} 
+p {
+    color:lightgray;
+    font-size:20px;
+    font-family: sans-serif;
+}
+.menu  {
+    height:80vh;
+    border:px solid white;
+    padding-top:50px;
+}
+.menu .height {
+    height:9.9vh;
+    border: px solid white;
+    padding: 23px;
+    margin-bottom: 2px;
+}
+.menu p4 {
+    font-size:25px;
+    color:white;
+}
+.menu p5 {
+    font-size:13px;
+    color:gray;
+    font-weight: 500;
+    font-family:monospace;
+}
+.height p2 {
+    margin-left: 3px;
+    color: antiquewhite;
+    margin-top:5px;
+}
+.height a p2 {
+    text-decoration: none;
+}
+.height:hover {
+   border-left: 5px solid #5584ff;;
+   color:aquamarine!important;
+    background-color: rgba(0, 0, 10, 0.2);
+}
+
+.iconat {
+    margin-top:4px;
+}
+
+
+.djathti {
+    height:7.5vh;
+    background: whitesmoke;
+    padding-top: 10px;
+}
+.djathti p {
+    font-size:24px;
+    color:darkcyan;
+    font-weight: 500;
+    font-family:fantasy;
+}
+.djathti input {
+    margin-bottom: 20px;
+}
+.djathti p1 {
+    font-size:13px;
+    color:darkgray;
+    margin-top:2px;
+}
+.hello {
+    margin-bottom: 63px;
+}
+.djathti p2 {
+    font-size:30px;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    font-family: monospace;
+}
+#forma .hapsira {
+    margin-bottom: 20px!important;
+}
+ form input {
+    margin-bottom: -12px!important;
+}
+@media only screen and (max-width: 991) {
+    body {
+        overflow: auto;
+    }
+}
+@media only screen and (max-width: 991px) {
+   
+    p {
+        margin-top:-27px!important;
+         color:lightgray;
+    }
+}
+@media only screen and (max-width: 991px) {
+    body {
+        overflow: auto;
+        height:auto;
+    }
+  
+    .scrolli {
+        overflow-y: !important;
+        height:auto!important;
+    }
+    .shkr1 {
+        text-align: left;
+    }
+    .save {
+        margin-bottom: 20px!important;
+    }
+}

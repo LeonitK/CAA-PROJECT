@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.majti {
+    height:100vh;
+    border: 0px solid black;
+    background: #1B1C1D;
+}
+.backi1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url('../images/ks.png');
+    height:20vh;
+    margin-top:-170px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    border: px solid white;
+   
+}
+.shkrimi {
+    margin-bottom:55px;
+    opacity: 0.9;
+}
+ .shkrimi p {
+    color:white;
+    font-size:11px;
+     color:gray;
+     font-weight: 500;
+     font-family: monospace;
+}
+.majti .logo {
+    height:7.5vh;
+    background:#212520;
+    margin-bottom:200px;
+    text-align: left;
+    padding:15px;
+}
+.logo p4 {
+    font-size: 20px;
+    color:white;
+    font-family: monospace;
+    font-weight: 500;
+    margin-top:0px;
+}
+.butoni a{
+    color:lightgray;
+    border:2px solid darkgray;
+    background-color:rgba(192,192,192,0.2);
+    border-radius: 5%;
+    width:80%;
+    margin-bottom:20px;
+    height:6vh;
+    padding-top:7px;
+}
+.butoni2 a {
+     color:orange;
+    border:2px solid orange;
+    background-color:rgba(192,192,192,0.2);
+    border-radius: 5%;
+    width:80%;
+    margin-bottom:25px;
+    height:6vh;
+    padding-top:7px;
+}
+.butoni a:hover {
+    color:#4A4C49;
+    background:lightgray;
+}
+.butoni2 a:hover {
+    color:#4A4C49;
+    background:orange;
+}
+
+.djathti {
+    height:100vh;
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     background:;
+}
+ .hello {
+   background-color:rgba(192,192,192,0.7);
+     height:100vh;
+}
+.djathti .right {
+    height:7.5vh;
+    background: whitesmoke;
+    padding-top:28px;
+}
+.right p {
+    font-size:11px;
+    color:darkslategray;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.signup {
+    padding-top:20px;
+    height: 82vh!important;
+    border: px solid black;
+    background:whitesmoke;
+    margin-top: 20px;
+}
+.forma {
+    height:82vh;
+    background:;
+    padding: 55px;
+}
+.forma p4 {
+    font-size:42px; 
+    color:#333333;
+    font-weight: 500;
+    font-family: cursive;
+}
+.he input {
+    font-size:1.9vh;
+}
+.he select {
+    font-size: 1.9vh;
+}
+.form-control {
+    margin-bottom: 22px;
+}
+@media only screen and (max-width: 991) {
+    body {
+        overflow: auto;
+    }
+}

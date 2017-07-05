@@ -1,0 +1,205 @@
+
+@import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-y:hidden; ;
+    height:100vh!important;
+    
+    
+}
+.majti {
+    height:100vh;
+    border: 0px solid black;
+   background: #2C2E2B;;
+     
+}
+.backi1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url('../images/ks.png');
+    height:20vh;
+    margin-top:-170px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    border: px solid white;
+   
+}
+.majti .logo {
+    height:7.5vh;
+    background: #1D1F1C;
+    padding-top:15px;
+} 
+p {
+    color:lightgray;
+    font-size:20px;
+    font-family: sans-serif;
+}
+.menu  {
+    height:80vh;
+    border:px solid white;
+    padding-top:50px;
+   
+}
+.menu .height {
+    height:9.9vh;
+    border: px solid white;
+    padding: 23px;
+    margin-bottom: 2px;
+}
+.menu p4 {
+    font-size:25px;
+    color:white;
+}
+.menu p5 {
+    font-size:13px;
+    color:gray;
+    font-weight: 500;
+    font-family:monospace;
+    
+}
+.height p2 {
+    margin-left: 3px;
+    color: antiquewhite;
+    margin-top:5px;
+   
+}
+.height a p2 {
+    text-decoration: none;
+}
+.height:hover {
+   border-left: 5px solid #5584ff;;
+   color:aquamarine!important;
+     background-color: rgba(0, 0, 10, 0.2);
+}
+
+.iconat {
+    margin-top:4px;
+}
+.shkr {
+    height:7.5vh;
+    background: whitesmoke;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+.shkr p3 {
+    font-size: 22px;
+    color:darkcyan;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 22px; /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 98.5%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 14px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+* {
+  border-radius(0) !important;
+}
+
+#field {
+    margin-bottom:10px;
+}
+.scrolli {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding-top:40px;
+}
+
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: darkslategray;
+}
+i {}
+body {
+    background:#f0f0f0;
+}
+.nav {
+    left:50%;
+    margin-left:-150px;
+    top:50px;
+    position:absolute;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background:#fff;
+}
+.dropdown {
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    width:300px;    
+}
+.dropdown-menu>li>a {
+    color:#428bca;
+}
+.dropdown ul.dropdown-menu {
+    border-radius:4px;
+    box-shadow:none;
+    margin-top:20px;
+    width:300px;
+}
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+@media only screen and (max-width: 991px) {
+    body {
+        overflow: auto;
+        height:auto;
+    }
+  p {
+        margin-top:-32px!important;
+         color:lightgray;
+    }
+    .scrolli {
+        overflow-y: hidden!important;
+        height:auto!important;
+    }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techstitution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body style="@media only screen and (max-width: 991) {
+    body {
+        overflow: auto;
+    }
+    .shtyje p {
+      text-align: right;
+    }
+};">
+    
+    <div class="webi text">
+        <div class="col-md-2 majti">
+         <div class="row">
+         
+          <div class="col-md-12 logo text-left" style="padding-top:15px; margin-bottom: ">
+           <div class="col-md-2 text-right">  
+              <span style="font-size:20px; color:lightgray; margin-top:3px;" class="glyphicon glyphicon-asterisk"></span>
+              </div>
+              
+             <div class="col-md-8 col-xs-9 text-left"><p>CAA </p></div>
+
+              
+              
+            
+         </div>
+          
+            <div class="col-md-12 menu">
+                <div class="row">
+                 
+                 <div class="col-md-12 text-center" style="margin-bottom:65px;"><p4> Menu</p4><br>
+                 <p5>Just for Employers</p5>
+                 </div>
+                 
+               <a href="{{ url_for('main.add_audit') }}" class="">
+                    <div class="col-md-12 height text-left" style="border-bottom: px solid red;">
+                         <div class="col-md-3 col-xs-5"><span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-plus-sign"></span></div> 
+                         <div class="col-md-9 col-xs-5 text-left iconat">
+                         <p2 style="font-weight: ;"> New Audit</p2>
+                         </div>
+                    </div>
+                  </a>  
+                   
+                     
+                      
+               <a href="{{ url_for('main.view_reports') }}">
+                    <div class="col-md-12 height text-left">                    
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-list-alt"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Raports</p2></div>
+                      
+                     </div>
+                 </a>
+                     
+                     <a href="/user">
+                      <div class="col-md-12 height text-left">
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-user"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Members</p2></div>
+                         
+                     </div>
+                     </a>
+                     
+                     <a href="/">
+                      <div class="col-md-12 height text-left" style="margin-bottom:96px";>
+                         
+                          <div class="col-md-3 col-xs-5"> <span style="font-size:25px; color:lightgray;" class="glyphicon glyphicon-off"></span></div>
+                         <div class="col-md-9 col-xs-5 text-left iconat"> <p2> 
+                         Log out</p2></div>
+                       
+                     </div>
+                    </a>
+                      
+                     
+                     <div class="col-md-11 text-center">
+                       <a href="/contactAudit" id="butoni" type="submit"class="btn btn-md btn-info">
+                         Contact Us</a>
+                     </div>
+                     
+                  </div>     
+                </div> <!-- MENU -->
+        
+              
+        
+          
+            </div> <!-- ROW -->
+        </div> <!-- MAJTI -->
+         <div class="col-md-10 shkr" style="padding-top:20px; background:whitesmoke; height:7.5vh;">
+            <div class="row">
+                <div class="col-md-2 text-right rap">
+                    <a href="/dashboard"><span class="glyphicon glyphicon-home" style="font-size:20px; color:darkcyan"></span>  Home</a> 
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <div class="col-md-10 right1" style="height:92vh; background:lightyellow; padding-top:30px; border:px solid red; overflow-x:hidden; overflow-y:scroll;">
+
+        <div class="nalti text-center" style="height:6vh; background: white; border: 1px solid lightgray; padding-top: 13px;  border-radius: 20px; margin-bottom: 30px;">
+          <p6 style="font-weight: 500; color:darkcyan;">Summary of this month</p6>
+        </div>
+
+
+    <div class="shtyje" style="margin-bottom: 20px; height:30vh;border:px solid red;">
+     <div class="col-md-3" style="height:30vh; border:1px solid lightgray;margin-bottom: 20px;">
+       <div class="row">
+        <div class="col-md-12 btn-danger part2" style="height:15vh; padding-top:;  border:px solid whitesmoke;
+        ">
+          <div class="col-md-5" style="padding-top: 24px;">
+            <span class="glyphicon glyphicon-paste" style="font-size: 45px; color:white;"></span>
+          </div>
+          <div class="col-md-7 text-left" style="padding-top: 10px;">
+            <p style="font-size:24px; border-bottom: 1px solid lightgray; color:white; font-weight: 500; ">9,336</p>
+            <p style="font-size: 14px; font-family: cursive; color:white; ">AUDIT RAPORT  !!</p>
+          </div>
+          <div class="row">
+          <div class="col-md-12" style="height:15vh; background:white; padding: 15px; font-size: 12px;color:darkgray; ">
+             <p4>
+               THIS BOX  SHOWS, HOW MANY AUDITS ARE INSERT IN RAPORT PER MONTH...!
+             </p4>
+             </div>
+          </div>
+        </div>
+       </div> 
+      </div>
+
+
+ <div class="col-md-3" style="height:30vh; border:1px solid lightgray; margin-bottom: 20px;">
+       <div class="row">
+        <div class="col-md-12 btn-info part2" style="height:15vh; padding-top:;  border:px solid whitesmoke;
+        ">
+          <div class="col-md-5" style="padding-top: 24px;">
+            <span class="glyphicon glyphicon-list-alt" style="font-size: 45px; color:white;"></span>
+          </div>
+          <div class="col-md-7 text-left" style="padding-top: 10px;">
+            <p style="font-size:24px; border-bottom: 1px solid lightgray; color:white; font-weight: 500; ">2,136</p>
+            <p style="font-size: 14px; font-family: cursive; color:white; ">EDITET RAPORTS !!</p>
+          </div>
+          <div class="row">
+          <div class="col-md-12" style="height:15vh; background:white; padding: 15px; font-size: 12px;color:darkgray; ">
+             <p4>
+               THIS BOX  SHOWS, HOW MANY RAPORT'S ROW  ARE DELETED OR EDITED PER MONTH...!
+             </p4>
+             </div>
+          </div>
+        </div>
+       </div> 
+      </div>
+
+
+<div class="col-md-3" style="height:30vh; border:1px solid lightgray; margin-bottom: 20px;">
+       <div class="row">
+        <div class="col-md-12 btn-warning part2" style="height:15vh; padding-top:;  border:px solid whitesmoke;
+        ">
+          <div class="col-md-5" style="padding-top: 24px;">
+            <span class="glyphicon glyphicon-user" style="font-size: 45px; color:white;"></span>
+          </div>
+          <div class="col-md-7 text-left" style="padding-top: 10px;">
+            <p style="font-size:24px; border-bottom: 1px solid lightgray; color:white;font-weight: 500; ">36</p>
+            <p style="font-size: 14px; font-family: cursive; color:white; ">NEW USERS & /ADMIN !!</p>
+          </div>
+          <div class="row">
+          <div class="col-md-12" style="height:15vh; background:white; padding: 15px; font-size: 12px;color:darkgray; ">
+             <p4>
+               THIS BOX  SHOWS, HOW MANY EMPLOYES ARE ADDED IN DEPARTMENT...!
+             </p4>
+             </div>
+          </div>
+        </div>
+       </div> 
+      </div>
+
+
+
+
+       <div class="col-md-3" style="height:30vh; border:1px solid lightgray; margin-bottom: 20px;">
+       <div class="row">
+        <div class="col-md-12 btn-success part2" style="height:15vh; padding-top:;  border:px solid whitesmoke;
+        ">
+          <div class="col-md-5" style="padding-top: 24px;">
+            <span class="glyphicon glyphicon-envelope" style="font-size: 45px; color:white;"></span>
+          </div>
+          <div class="col-md-7 text-left" style="padding-top: 10px;">
+            <p style="font-size:24px; border-bottom: 1px solid lightgray; color:white; font-weight: 500; ">49</p>
+            <p style="font-size: 14px; font-family: cursive; color:white; ">SEND EMAILS !!</p>
+          </div>
+          <div class="row">
+          <div class="col-md-12" style="height:15vh; background:white; padding: 15px; font-size: 12px;color:darkgray; ">
+             <p4>
+               THIS BOX  SHOWS, HOW MANY EMAILS ARE SENDED...!! 
+             </p4>
+             </div>
+          </div>
+        </div>
+       </div> 
+      </div>
+
+
+<div class="well" style="font-weight: 400; font-size: 22px;">
+<a href="https://www.caa.co.uk/home/">https://www.caa.co.uk/home/</a><br>
+<a href="https://www.caa.co.uk/General-aviation/">https://www.caa.co.uk/General-aviation/</a><br>
+<a href="https://www.caa.co.uk/Commercial-industry/">https://www.caa.co.uk/Commercial-industry/</a><br>
+<a href="https://www.caa.co.uk/Data-and-analysis/">https://www.caa.co.uk/Data-and-analysis/</a>
+
+ <br><br>
+<button type="button" class="btn btn-md btn-primary">Click on Links</button>
+</div>
+
+
+
+
+
+             
+           
+             <a href=""> <div class="col-md-4 foto">
+                   <div class="row">
+                  <img src="../static/images/helicopter.jpg" height="250;" width="100%"; alt="" style="margin-bottom:0px;">
+                  <div class="col-md-12 orange" style="height:36.2vh; padding-top:35px; border:px solid red;">  
+                     <div class="col-md-12 text-center" style="font-size:px;">
+                        <span class="glyphicon glyphicon-cloud" style="font-size:45px; margin-bottom:12px;color:darkslategray;"></span>
+                    </div> 
+                    <div class="col-md-12 text-center last">
+                        <p5 style="font-size:25px; font-weight:500; margin-bottom:55px;">Helicopter</p5>
+                    </div>
+                     <div class="col-md-12 shkrimi text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi sit enim at, iusto dolorum animi veritatis amet repudiandae unde rerum laboriosam.
+                    </div>
+                   </div>    
+                    </div>                 
+                </div></a>   
+               
+            <a href="">   
+                <div class="col-md-4 foto">
+                     <div class="row">
+                          <img src="../static/images/airplane.jpg" height="250;" width="100%"; alt="" style="margin-bottom:0px;">
+                             <div class="col-md-12 orange" style="height:36.2vh; padding-top:35px; border:px solid red;">  
+                            <div class="col-md-12 text-center">
+                        <span class="glyphicon glyphicon-plane" style="font-size:45px; margin-bottom:12px; color:darkslategray;"></span>
+                    </div> 
+                      <div class="col-md-12 text-center last">
+                        <p5 style="font-size:25px; font-weight:500; margin-bottom:55px;">Airplane</p5>
+                    </div>
+                     <div class="col-md-12 shkrimi text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi sit enim at, iusto dolorum animi veritatis amet repudiandae unde rerum laboriosam.
+                    </div>
+                         </div>
+                    </div>
+                </div>
+             </a> 
+                 
+                <a href="">
+                  <div class="col-md-4 foto">
+                      <div class="row">
+                          <img src="../static/images/droni.jpg" height="250;" width="100%"; alt="" style="margin-bottom:0px;">
+                           <div class="col-md-12 orange" style="height:36.2vh; padding-top:35px; border:px solid red;">     
+                            <div class="col-md-12 text-center">
+                        <span class="glyphicon glyphicon-send" style="font-size:45px; margin-bottom:12px;"></span>
+                    </div> 
+                     <div class="col-md-12 text-center last">
+                        <p5 style="font-size:25px; font-weight:500; margin-bottom:55px;">Drone</p5>
+                    </div>
+                    <div class="col-md-12 shkrimi text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi sit enim at, iusto dolorum animi veritatis amet repudiandae unde rerum laboriosam.
+                    </div>
+                </div>
+                </div>
+          
+              </a>     
+                
+            </div>
+            <div class="col-md-12">   
+        <div class="well" style="margin-top:10px;">
+               <p3 style="font-size:14px; font-weight: 500; color:gray;"> As Civil Aviation Regulators, CAAK:
+
+Implements civil aviation legislation and implements policies adopted by the Republic of Kosovo Ministry of Infrastructure or the Government in the field of civil aviation;
+Provides advice and proposals to the Ministry, the Government and the Assembly regarding policies and legislation for the civil aviation sector, issues implementing regulations and air navigation orders, in accordance with the Law on Civil Aviation and the ECAA Agreement;
+Issues licenses, certificates and permits in accordance with the CAAK’s competencies and responsibilities;
+Regulates the safety of air transportation in the Republic of Kosovo;
+Regulates the economics of airports and air navigation services;
+Provides advice to the Minister in connection with the Minister’s development of proposed policies for the use of Kosovo airspace that meet the needs of users, taking into account national security, economic and environmental factors, and the need for a high standard of safety;
+Supervises and ensures effective implementation of civil aviation legislation, standards, rules, procedures and orders, except where the Law on Civil Aviation or another primary normative act specifically and exclusively assigns such a function to the Ministry or another public authority;
+Disseminates information to the public about matters relevant to the functions and activities of the CAAK;
+Perform such acts, conduct such investigations and inspections, and issue such orders, rules, regulations, and/or procedures as CAAK may deem reasonably necessary to properly and lawfully:
+implements the applicable provisions of the Law on Civil Aviation or
+discharge the powers and duties assigned to CAAK by the Law on Civil .
+           </p3>
+          </div>
+        </div> 
+            
+          
+            </div>
+            
+            
+            
+  
+    
+    </div> <!-- WEBI TEXT -->
+    
+    
+
+    
+        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>     
+</body>
+</html>
